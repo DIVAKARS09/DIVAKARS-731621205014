@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .div1 {
+            width: 80%;
+            background-color: white;
+            padding: 20px;
+        }
+        .head {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            padding: 10px ;
+            border-radius: 30px;
+            border: 3px solid gold;
+            border-bottom: 0px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            border: 1px solid black;
+            border-top: 5px solid black;
+        }
+        .gallery img {
+            width: 30%;
+            margin-bottom: 20px;
+            border: 5px solid #ddd;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="head">
+            Photo Gallery
+        </div>
+        <div class="gallery">
+            <img src="avatar.jpg" alt="Image 1">
+            <img src="download.jpg" alt="Image 2">
+            <img src="IMG-20221203-WA0054.jpg" alt="Image 3">
+            <img src="IMG-20221203-WA0054.jpg" alt="Image 4">
+            <img src="avatar.jpg" alt="Image 5">
+            <img src="download.jpg" alt="Image 6">
+        </div>
+    </div>
+</body>
+</html>
