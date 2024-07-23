@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS PROMPT</title>
+    <script>
+        function wel(){
+            alert("Hi welcome");
+        }
+        function greet() {
+            let name = prompt("Enter your name");
+            alert( "welcome" + name);
+        }
+        function leave(){
+            confirm("do you want leave");
+        }
+    </script>
+</head>
+<body onload="wel()" onunload="leave()">
+    <button onclick="greet()">Say welcome</button>
+</body>
+</html>
