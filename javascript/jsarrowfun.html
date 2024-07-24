@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const sum = () => 10 + 20;
+        document.write("Add:"+sum());
+
+        const sub1 = (x,y) => x - y;
+        const num1=20;
+        const num2=10;
+        const sub=sub1(num1,num2);
+        document.write("<br>Subract:"+sub);
+
+        const mul = (x,y) => {return(x*y)};
+        document.write("<br>multiple:"+mul(10,20));
+
+        const big=(x,y)=>{
+            if(x>y)
+            return x;
+            else
+            return y;
+        };
+        document.write("<br>Grater:"+big(20,10));
+
+        const fact = (num) =>{
+    let fact = 1;
+    for(let i=1;i<=num;i++){
+        fact *= i;
+    }
+    return fact;
+    
+};
+document.write("<br>Factorial:"+fact(5));
+    </script>
+</head>
+<body >
+    
+</body>
+</html>
