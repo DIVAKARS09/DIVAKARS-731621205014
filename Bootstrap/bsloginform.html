@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tDocumen</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <style>.login-container {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f7f7f7;
+        margin-top: 50px;
+    }
+    small{
+        padding-left: 150px;
+    }
+    hr{
+        border: 1px solid rgb(214,214,214);
+    }
+</style>
+
+</head>
+<body>
+    <div class="login-container col-md-3" >
+        
+        <h3 class="for-control input-lg btn-info">Sign In <small></textarea><a href="#" >Forgotten password? </a></small></h3>
+        <form>
+            <div class="form-group">
+                <div class="input-group">
+                <pre class="input-group-addon glyphicon glyphicon-user"></pre>
+                <input type="text" class="form-control" placeholder="username or Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                <pre class="input-group-addon glyphicon glyphicon-lock"></pre>
+                <input type="password" class="form-control "placeholder="password">
+                </div>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Remember me</label>
+            </div>
+            <button type="button" class="btn btn-success" >Login</button>
+            <button type="button" class="btn btn-primary" >Login with Facebook</button>
+            <hr>
+            <p>Don't have an account! <a href="#">Sign up Here</a></p>
+        </form>
+    </div>
+</body>
+</html>
