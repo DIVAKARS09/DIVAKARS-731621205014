@@ -28,7 +28,7 @@
             margin: 100px 70px 10% 40%;
         }
 
-        .display {
+        .disp {
             width: 203px;
             height: 60px;
             font-size: 24px;
@@ -44,9 +44,9 @@
 <body>
 
 <div class="calc">
-    <input type="text" class="display" id="display" disabled>
+    <input type="text" class="disp" id="disp" disabled>
     <br><br>
-    <button class="button" onclick="clearEntry()">CE</button>
+    <button class="button" onclick="clearEntry()">E</button>
     <button class="button" onclick="clearAll()">C</button>
     <button class="button" onclick="input('%')">%</button>
     <button class="button" onclick="input('/')">/</button>
@@ -73,26 +73,22 @@
 </div>
 
 <script>
-    let display = document.getElementById('display');
-    let currentInput = '';
-
+    let disp = document.getElementById('disp');
+    var current = '';
     function input(value) {
-        currentInput += value;
-        display.value = currentInput;
+        current += value;
+        disp.value = current;
     }
-
     function clearEntry() {
-        currentInput = currentInput.slice(0, -1);
-        display.value = currentInput;
+        current = current.slice(0,-1);
+        disp.value = current;
     }
-
     function clearAll() {
-        currentInput = '';
-        display.value = currentInput;
+        current = '';
+        disp.value = current;
     }
-
     function calculate() {
-        display.value = eval(currentInput);
+        disp.value = eval(current);
        
     }
 </script>
