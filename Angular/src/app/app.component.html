@@ -1,4 +1,4 @@
-<h1>Interpolation Example</h1>
+<!-- <h1>Interpolation Example</h1>
 <br>Name:{{name}};
 <br>Age:{{age}}
 <br>Email:{{email}}
@@ -17,4 +17,26 @@
 <br><br>
 <img [src]="imagepath"/>
 <br>
-<button (click)="changeimage()">changeimage</button>
+<button (click)="changeimage()">changeimage</button> -->
+
+<h1 [ngClass] = "myClass">Structural and Attribute Directives </h1>
+<br>
+<button (click)="ChangeFlag()">Show or Hide Div</button>
+<br>
+<div *ngIf="flag" [ngStyle]="myStyle">
+<br>
+<ul>
+    <li *ngFor="let vec of vehicles" (click)="setSelectedItem(vec)">{{vec}}</li>
+</ul>
+<br>
+<b>You Have Selected : {{selectedVehicle}}</b>
+<br>
+<div [ngSwitch] = "selectedVehicle">
+    <b style =color:green *ngSwitchCase="'TwoWheeler'">Bike</b>
+    <b style =color:green *ngSwitchCase="'ThreeWheeler'">Auto</b>
+    <b style=color:green *ngSwitchCase="'FourWheeler'">Car</b>
+    <b style= color:green *ngSwitchDefault="none">Invalid</b>
+</div>
+<br>
+<button (click)="ChangeStyle()">Change Style</button>
+</div>
