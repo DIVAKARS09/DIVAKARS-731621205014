@@ -1,0 +1,36 @@
+nav{
+    border: 4px black solid;
+    text-align: center;
+    border-radius: 10px;
+    width: 900px;
+    position: absolute;
+    left: 17%;
+    top: 3%;
+}
+.details{
+    border: 4px black solid;
+    position: absolute;
+    bottom: 240px;
+    border-radius: 10px;
+    width: 600px;
+    left: 17%;
+}
+.items{
+    margin-left: 20px;
+}
+.btn1{
+    background: #ec0909;
+    margin-bottom: 20px;
+    margin-left: 8%;
+    margin-top: 2px;
+    
+}
+.details1{
+    border: 4px black solid;
+    position: absolute;
+    bottom: 240px;
+    border-radius: 10px;
+    width: 300px;
+    left: 61%;
+    height: 47%;
+}
