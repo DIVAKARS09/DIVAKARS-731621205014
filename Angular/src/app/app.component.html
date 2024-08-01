@@ -19,7 +19,7 @@
 <br>
 <button (click)="changeimage()">changeimage</button> -->
 
-<h1 [ngClass] = "myClass">Structural and Attribute Directives </h1>
+<!-- <h1 [ngClass] = "myClass">Structural and Attribute Directives </h1>
 <br>
 <button (click)="ChangeFlag()">Show or Hide Div</button>
 <br>
@@ -39,4 +39,19 @@
 </div>
 <br>
 <button (click)="ChangeStyle()">Change Style</button>
-</div>
+</div> -->
+<table width="80%" align="center">
+    <tr>
+    <th><a routerLink="home">Home</a></th>
+    <th><a routerLink="contact">Contact</a></th>
+    <th><a routerlink="about">About</a></th>
+    </tr>
+    </table>
+    <div>
+    This is the space for New Component.
+    <router-outlet></router-outlet>
+    </div>
+    <h1>
+        Addition:{{sum}}
+    </h1>
+    <app-diva></app-diva>
